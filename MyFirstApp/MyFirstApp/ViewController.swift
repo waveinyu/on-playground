@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     // `@`: 어트리뷰트(컴파일러가 알기 쉽게 인덱싱 해주는 것)
     @IBOutlet weak var mainLable: UILabel!
     
+    // 버튼 속성에 관한 제어를 하고 싶을 땐 따로 변수로 지정해주어야 한다
+    @IBOutlet weak var myButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +32,12 @@ class ViewController: UIViewController {
         mainLable.text = "월드"
         mainLable.backgroundColor = UIColor.gray
         mainLable.textColor = UIColor.white
-                
+        
+        myButton.backgroundColor = UIColor.yellow
+        myButton.setTitleColor(UIColor.black, for: UIControl.State.normal)
+        
+        
+        
         
     }
     
